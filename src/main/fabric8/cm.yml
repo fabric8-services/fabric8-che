@@ -7,7 +7,7 @@ data:
   che-server-evaluation-strategy: "always-external-custom"
   che.logs.dir: "/data/logs"
   che.docker.server_evaluation_strategy.custom.template: "<serverName>-<if(isDevMachine)><workspaceIdWithoutPrefix><else><machineName><endif>-<if(workspacesRoutingSuffix)><workspacesRoutingSuffix><else><externalAddress><endif>"
-  che.docker.server_evaluation_strategy.custom.external.protocol: "https"
+  che.docker.server_evaluation_strategy.custom.external.protocol: "http"
   che.predefined.stacks.reload_on_start: "true"
   log-level: "INFO"
   docker-connector: "openshift"
