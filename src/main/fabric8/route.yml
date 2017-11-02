@@ -4,3 +4,6 @@ spec:
   to:
     kind: Service
     name: "che-host"
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
